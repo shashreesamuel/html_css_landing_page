@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <title>My Landing Page</title>
+</head>
+
+<body>
+    <div class="hero-img"></div>
+    <div class="wrapper">
+        <header>
+            <a class="logo" href="#">Some<span>Company</span></a>
+
+            <nav>
+                <svg class="close" viewBox="0 0 628 628" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M420.343 217.592C420.343 214.894 418.135 212.686 415.437 212.686L374.96 212.87L314 285.544L253.101 212.931L212.563 212.747C209.865 212.747 207.657 214.894 207.657 217.653C207.657 218.819 208.086 219.923 208.822 220.843L288.61 315.901L208.822 410.898C208.081 411.797 207.67 412.923 207.657 414.087C207.657 416.786 209.865 418.994 212.563 418.994L253.101 418.81L314 346.136L374.899 418.748L415.375 418.932C418.074 418.932 420.282 416.786 420.282 414.026C420.282 412.861 419.852 411.757 419.116 410.837L339.451 315.84L419.239 220.781C419.975 219.923 420.343 218.757 420.343 217.592Z"
+                        fill="black" />
+                    <path
+                        d="M314 39.8633C162.274 39.8633 39.25 162.888 39.25 314.613C39.25 466.339 162.274 589.363 314 589.363C465.726 589.363 588.75 466.339 588.75 314.613C588.75 162.888 465.726 39.8633 314 39.8633ZM314 542.754C188.032 542.754 85.8594 440.581 85.8594 314.613C85.8594 188.645 188.032 86.4727 314 86.4727C439.968 86.4727 542.141 188.645 542.141 314.613C542.141 440.581 439.968 542.754 314 542.754Z"
+                        fill="black" />
+                </svg>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+
+            <svg class="menu" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z"
+                    fill="white" />
+            </svg>
+
+        </header>
+
+        <section class="hero">
+            <h1>Visit the world and experience nature</h1>
+            <p class="subhead">A tour of the world stopping at all the national landmarks allowing you to see the world
+                in 4K.</p>
+
+            <svg class="down-arrow" width="24" height="133" viewBox="0 0 24 133" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M10.9393 132.061C11.5251 132.646 12.4749 132.646 13.0607 132.061L22.6066 122.515C23.1924 121.929 23.1924 120.979 22.6066 120.393C22.0208 119.808 21.0711 119.808 20.4853 120.393L12 128.879L3.51471 120.393C2.92893 119.808 1.97918 119.808 1.39339 120.393C0.807607 120.979 0.807607 121.929 1.39339 122.515L10.9393 132.061ZM10.5 -6.55671e-08L10.5 131L13.5 131L13.5 6.55671e-08L10.5 -6.55671e-08Z"
+                    fill="black" />
+            </svg>
+        </section>
+
+        <section class="more-info">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Macchu Picchu</p>
+                    <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, minus?</p>
+                </div>
+                <img src="images/macchu_picchu.jfif" alt="image showing the amazon river">
+            </div>
+
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">Niagara Falls</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, est.</p>
+                </div>
+                <img src="images/niagara_falls.jfif" alt="image showing the amazon river">
+            </div>
+
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Amazon River</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, fugit?</p>
+                </div>
+                <img src="images/amazon_river.jpg" alt="image showing the amazon river">
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
+</body>
+
+</html>
